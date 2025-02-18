@@ -8,30 +8,58 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: #f0f4f8; /* Спокойный, элитный фон */
+            color: #34495e; /* Цвет текста, который хорошо контрастирует с фоном */
             text-align: center;
-            padding-top: 50px;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
         h1 {
             font-family: 'Playfair Display', serif;
-            color: #2c3e50;
-            font-size: 2.5em;
+            font-size: 4em; /* Очень крупный текст */
+            color: #2c3e50; /* Темно-синий для элитности */
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
         }
         p {
-            font-size: 1.2em;
+            font-size: 2em; /* Больше, чем обычно, но меньше заголовка */
             color: #34495e;
+            margin-bottom: 40px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .content {
+            max-width: 600px;
+            text-align: justify;
+            font-size: 1.2em;
+            line-height: 1.6;
         }
         a {
             color: #3498db;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #2980b9;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <h1>Добро пожаловать</h1>
     <p>это эксперимент</p>
-    
+    <div class="content">
+        <p>Добро пожаловать на наш уникальный и современный сайт, где мы исследуем новые грани веб-дизайна и технологий. Здесь вы найдете не только интересные визуальные решения, но и инновационные подходы к созданию контента. Наша цель - создать атмосферу, которая вдохновляет и мотивирует к творчеству.</p>
+    </div>
     <a href="page2.html">Перейдите на следующую страницу</a>
 </body>
 </html>
